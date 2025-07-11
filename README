@@ -1,0 +1,17 @@
+You are working on a backend of an e-commerce platform. The system fetches a list of all orders placed in the last 24 hours.
+Each order has a list of products and each product belongs to a category.
+
+Now, you are asked to generate a report that shows for each product category the total quantity of items sold, but only include
+order when the total value is more than 500, and exclude any product that marked as out of product even if it was part of the order.
+
+The report must be sorted by total quantity in descending order.
+
+How would you approach writing this logic using Java 8 stream, keeping performance and readability in mind?
+
+Generate a report
+1.For each product category
+2.From order in the last 24 hour with total value > 500,
+3.Exclude products that are out of stock
+Group by category
+Sum of total quantity sold per category
+Sort by total quantity descending
