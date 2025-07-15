@@ -1,0 +1,9 @@
+package com.kk.coading.ScenarioBasedApplication.repositity;
+
+import com.kk.coading.ScenarioBasedApplication.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long> {
+}

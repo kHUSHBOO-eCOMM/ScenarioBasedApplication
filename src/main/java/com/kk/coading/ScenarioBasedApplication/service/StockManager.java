@@ -17,33 +17,33 @@ public class StockManager {
 
     public static void main(String[] args) {
 
-        Map<String, Integer> productStock = new HashMap<>();
-        productStock.put("p001", 100);
-        productStock.put("p002", 50);
-        productStock.put("p003", 400);
-        productStock.put("p004", 10);
+        Map<Long, Integer> productStock = new HashMap<>();
+        productStock.put(001l, 100);
+        productStock.put(002l, 50);
+        productStock.put(003l, 400);
+        productStock.put(004l, 10);
 
 
         List<Order> orders = Arrays.asList(
                 new Order("001",
-                Arrays.asList(new Product("p001", 20),
-                        new Product("p002", 60),
-                        new Product("p003", 300)
+                Arrays.asList(new Product(001l, 20),
+                        new Product(002l, 60),
+                        new Product(003l, 300)
                 ), 100.00, LocalDateTime.now()),
                 new Order("001",
-                        Arrays.asList(new Product("p004", 20),
-                                new Product("p002", 20),
-                                new Product("p001", 20)
+                        Arrays.asList(new Product(004l, 20),
+                                new Product(002l, 20),
+                                new Product(001l, 20)
                         ), 100.00, LocalDateTime.now()),
                 new Order("001",
-                        Arrays.asList(new Product("p001", 20),
-                                new Product("p003", 20),
-                                new Product("p002", 20)
+                        Arrays.asList(new Product(001l, 20),
+                                new Product(003l, 20),
+                                new Product(002l, 20)
                         ), 100.00, LocalDateTime.now()),
                 new Order("001",
-                        Arrays.asList(new Product("p001", 20),
-                                new Product("p003", 20),
-                                new Product("p002", 20)
+                        Arrays.asList(new Product(001l, 20),
+                                new Product(003l, 20),
+                                new Product(002l, 20)
                         ), 100.00, LocalDateTime.now())
 
         );

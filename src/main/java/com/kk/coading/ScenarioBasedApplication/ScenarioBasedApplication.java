@@ -11,7 +11,7 @@ public class ScenarioBasedApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ScenarioBasedApplication.class, args);
 
-		Product product = new Product("1","sari","clothing",2, true, 123 );
+		Product product = new Product(1l,"sari","clothing",2, true, 123 );
 		System.out.println(product.getProductId());
 	}
 

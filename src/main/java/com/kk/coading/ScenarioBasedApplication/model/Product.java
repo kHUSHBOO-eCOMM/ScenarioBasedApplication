@@ -1,22 +1,28 @@
 package com.kk.coading.ScenarioBasedApplication.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Builder
 public class Product {
 
-    private String productId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productId;
     private String name;
     private String category;
     private int quantity;
     private boolean inStock;
     private double price;
 
-    public Product(String productId, int quantity) {
+    public Product(Long productId, int quantity) {
         this.productId = productId;
         this.quantity = quantity;
     }

@@ -14,27 +14,27 @@ public class ReportGenerator {
         List<Order> orders = Arrays.asList(
                 new Order("12",
                         Arrays.asList(
-                                new Product("1","sari","clothing",2, true, 1232.00),
-                                new Product("2", "Samsung lite", "Electronic", 1, true, 50000),
-                                new Product("3", "Samsung node 10", "Electronic", 1, false, 54000),
-                                new Product("4", "Maharaja Mixture", "Electronic", 1, false, 9000)
+                                new Product(1l,"sari","clothing",2, true, 1232.00),
+                                new Product(2l, "Samsung lite", "Electronic", 1, true, 50000),
+                                new Product(3l, "Samsung node 10", "Electronic", 1, false, 54000),
+                                new Product(4l, "Maharaja Mixture", "Electronic", 1, false, 9000)
 
                                 ), 15000, LocalDateTime.now().minusHours(3)),
                 new Order("12",
                         Arrays.asList(
-                                new Product("5","sari","clothing",2, true, 112.00),
-                                new Product("6", "Shoes", "Footware", 1, true, 500),
-                                new Product("7", "Samsung tsirt", "clothing", 1, false, 500),
-                                new Product("8", "Maharaja", "util", 1, true, 90)
+                                new Product(5l,"sari","clothing",2, true, 112.00),
+                                new Product(6l, "Shoes", "Footware", 1, true, 500),
+                                new Product(7l, "Samsung tsirt", "clothing", 1, false, 500),
+                                new Product(8l, "Maharaja", "util", 1, true, 90)
 
                         ), 500, LocalDateTime.now().minusHours(3)),
 
                 new Order("12",
                         Arrays.asList(
-                                new Product("9","sari","clothing",2, true, 1232.00),
-                                new Product("10", "key", "Decorative", 1, true, 50),
-                                new Product("11", "Top", "Clothing", 1, false, 50),
-                                new Product("12", "cable", "Electronic", 1, false, 90)
+                                new Product(9l,"sari","clothing",2, true, 1232.00),
+                                new Product(10l, "key", "Decorative", 1, true, 50),
+                                new Product(11l, "Top", "Clothing", 1, false, 50),
+                                new Product(12l, "cable", "Electronic", 1, false, 90)
 
                         ), 500, LocalDateTime.now().minusHours(26))
 
