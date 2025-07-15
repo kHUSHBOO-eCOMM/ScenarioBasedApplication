@@ -32,8 +32,10 @@ public class ProductService {
     }
 
     public ProductDTO createProduct(ProductDTO productDTO) {
-
-        return  ProductMapper.toDto(productRepository.save(ProductMapper.toEntity(productDTO)));
+        Product productEntity = ProductMapper.toEntity(productDTO);
+        Product product = productRepository.save(productEntity);
+//        Product product = productRepository.save(ProductMapper.toEntity(productDTO));
+        return  ProductMapper.toDto(product);
     }
 
     public ProductDTO updateProduct(Long productId, ProductDTO updatedProduct) {
